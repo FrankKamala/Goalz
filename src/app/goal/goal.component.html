@@ -1,13 +1,15 @@
-
+<div class="container">
   <h1>My Goals</h1>
   <hr>
   <ul>
     <div *ngFor='let goal of goals;let i = index'>
        <li appStrikethrough>{{goal.name}} </li> <!--added Directive to host -->
-      <button (click)='toggleDetails(i)'>Toggle Details</button>
+      <button (click)='toggleDetails(i)'class="btn btn-primary">Toggle Details</button>
       <app-detail *ngIf='goal.showDescription' [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-detail>
     </div>
 
 
 
   </ul>
+
+</div>
