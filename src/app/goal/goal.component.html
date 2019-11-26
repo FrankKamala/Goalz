@@ -2,6 +2,9 @@
   <h1>My Goals</h1>
   <hr>
   <ul>
+    <div class="row">
+
+    </div>
     <div *ngFor='let goal of goals;let i = index'>
        <li appStrikethrough>{{goal.name}} </li> <!--added Directive to host -->
       <button (click)='toggleDetails(i)'class="btn btn-primary">Toggle Details</button>
