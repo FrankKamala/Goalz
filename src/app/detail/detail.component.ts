@@ -8,6 +8,7 @@ import { Goal } from '../goal';
 export class DetailComponent implements OnInit {
  @Input() goal: Goal;
  @Output() isComplete = new EventEmitter<boolean>();
+ 
  goalComplete(complete:boolean){
    this.isComplete.emit(complete);
  }

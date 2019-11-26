@@ -7,7 +7,7 @@ import { Goal } from '../goal';
 })
 export class GoalComponent implements OnInit {
 
-    goals:Goal = [
+    goals:Goal[] = [
       //new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
       new Goal(1,'watch Finding Nemo', 'Check on Netflix'),
       new Goal(2, 'Buycookies' , 'Buy from Morio'),
@@ -23,7 +23,7 @@ export class GoalComponent implements OnInit {
   }
   completeGoal(isComplete, index){
     if (isComplete) {
-      this.goals.splice(index,1);
+    this.goals.splice(index,1);
     }
   }
 
