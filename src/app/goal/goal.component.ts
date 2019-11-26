@@ -14,7 +14,7 @@ export class GoalComponent implements OnInit {
 
       new Goal(3,'Get new Phone Case','Buy from CBD', new Date(2020,12,30)),
       new Goal(4,'Get Dog Food', 'Purchase from DogHouse', new Date(2019,12,29)),
-      new Goal(5,'Solve math homework','INAUMA BUT...', new Date(2019,11,29)),
+      new Goal(5,'Solve math homework','INAUMA BUT...', new Date(2019,12,29)),
 
     ];
 
