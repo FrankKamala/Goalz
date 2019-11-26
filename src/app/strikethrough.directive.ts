@@ -7,7 +7,7 @@ export class StrikethroughDirective {
 
   constructor(private elem:ElementRef) {
 
-  this.elem.nativeElement.style.textDecoration = 'linethrough';
+  this.elem.nativeElement.style.textDecoration = 'line-through';
 
 }
 
