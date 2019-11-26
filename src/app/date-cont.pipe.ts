@@ -10,10 +10,10 @@ export class DateContPipe implements PipeTransform {
     let todayWithNoTime:any = new Date(today.getFullYear(),today.getMonth(),today.getDate())
     var dateDifference = Math.abs(value - todayWithNoTime)//MILISECONDS
     const secondsInDay = 86400;//secs* mins*24hours
-    var dateDifferenceSeconds = dateDifference * 0.001; //miiliseconds to seconds
-    var dateCont = dateDifferenceSeconds / secondsInDay ;
+    var dateDifferenceSeconds =dateDifference * 0.0001; //miiliseconds to seconds
+    var dateCont =  Math.trunc(dateDifferenceSeconds/secondsInDay) ;
 
-    if (dateCont >=1 && value >todayWithNoTime){
+    if (dateCont >=1 && value > todayWithNoTime){
       return dateCont;
     }else{
       return 0;

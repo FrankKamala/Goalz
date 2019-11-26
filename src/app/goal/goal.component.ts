@@ -9,7 +9,7 @@ export class GoalComponent implements OnInit {
 
     goals:Goal[] = [
       //new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
-      new Goal(1,'watch Finding Nemo', 'Check on Netflix', new Date( 2019, 12 ,30)),
+      new Goal(1,'watch Finding Nemo', 'Check on Netflix', new Date( 2019,12,30)),
       new Goal(2, 'Buycookies' , 'Buy from Morio', new Date(2019, 12, 30)),
 
       new Goal(3,'Get new Phone Case','Buy from CBD', new Date(2020,12,30)),
