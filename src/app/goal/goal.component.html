@@ -7,7 +7,7 @@
         <div *ngFor='let goal of goals;let i = index'>
           <div >
 
-          <h4 id ="i" appStrikethrough>{{goal.name}} due on {{goal.completeDate|dateCont|uppercase}}</h4>
+          <h6 id ="i" appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h6>
            <!--added Directive to host -->
           <button (click)='toggleDetails(i)'class="btn btn-primary">Toggle Details</button>
           </div>
@@ -19,10 +19,11 @@
 
       </div>
 
+
     </div>
 
 
 
-  
+
 
 </div>
