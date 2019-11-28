@@ -18,6 +18,8 @@ export class GoalComponent implements OnInit {
 
     ];
 
+
+
     toggleDetails(index){
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
@@ -31,6 +33,13 @@ export class GoalComponent implements OnInit {
     }
     }
   }
+  //new goal come here//
+  addNewGoal(goal){
+  let goalLength = this.goals.length;
+  goal.id = goalLength+1;
+  goal.completeDate = new Date(goal.completeDate)
+  this.goals.push(goal)
+}
 
   constructor() { }
 
