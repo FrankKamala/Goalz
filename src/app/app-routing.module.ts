@@ -4,8 +4,8 @@ import { GoalComponent } from './goal/goal.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  {path:'goals',component:GoalComponent}
-  {path:'about',component:AboutComponent}
+  {path:'goals',component:GoalComponent},
+  {path:'about',component:AboutComponent},
 ];
 
 @NgModule({
