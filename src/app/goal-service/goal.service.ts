@@ -7,7 +7,7 @@ import { Goal } from '../goal';
 export class GoalService {
 
   getGoals() {
-    return Goal;
+    return [];
   }
   constructor() { }
 }

@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import progress Toolbar
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';//import http
 import { AppRoutingModule } from './app-routing.module';
