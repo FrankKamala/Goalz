@@ -14,6 +14,7 @@ import { StrikethroughDirective } from './strikethrough.directive';
 import { DateContPipe } from './date-cont.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutComponent } from './about/about.component';
     StrikethroughDirective,
     DateContPipe,
     GoalFormComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
